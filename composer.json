@@ -1,0 +1,25 @@
+{
+  "name": "technobureau/adminlte",
+  "description": "AdminLTE - admin control panel and dashboard that's based on Bootstrap 5",
+  "homepage": "https://technobureau.com/",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "responsive",
+    "back-end",
+    "template",
+    "theme",
+    "web",
+    "admin"
+  ],
+  "authors": [
+    {
+      "name": "Ganapathi Chidambaram"
+    }
+  ],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/TechnoBureau/AdminLTE/issues"
+  }
+}

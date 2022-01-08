@@ -1,0 +1,13 @@
+.main-header {
+  background-color: $dark-alt;
+  border-bottom-color: tint-color($dark-alt, 10%);
+
+  .nav-link {
+    color: $body-color-alt;
+
+    &:hover,
+    &:focus {
+      color: $white-alt;
+    }
+  }
+}

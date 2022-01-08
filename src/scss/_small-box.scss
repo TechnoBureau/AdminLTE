@@ -1,0 +1,153 @@
+//
+// Component: Small Box
+//
+
+.small-box {
+  @include border-radius($border-radius);
+  @include box-shadow($lte-card-shadow);
+
+  position: relative;
+  display: block;
+  margin-bottom: 1.25rem;
+
+  // content wrapper
+  > .inner {
+    padding: 10px;
+  }
+
+  > .small-box-footer {
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding: 3px 0;
+    color: rgba($white, .8);
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba($black, .1);
+
+    &:hover {
+      color: $white;
+      background-color: rgba($black, .15);
+    }
+  }
+
+  h3 {
+    @include font-size(2.2rem);
+    padding: 0;
+    margin: 0 0 10px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .col-xl-2 &,
+    .col-lg-2 &,
+    .col-md-2 & {
+      h3 {
+        @include font-size(1.6rem);
+      }
+    }
+
+    .col-xl-3 &,
+    .col-lg-3 &,
+    .col-md-3 & {
+      h3 {
+        @include font-size(1.6rem);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .col-xl-2 &,
+    .col-lg-2 &,
+    .col-md-2 & {
+      h3 {
+        @include font-size(2.2rem);
+      }
+    }
+
+    .col-xl-3 &,
+    .col-lg-3 &,
+    .col-md-3 & {
+      h3 {
+        @include font-size(2.2rem);
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+
+    > small {
+      display: block;
+      margin-top: 5px;
+      font-size: .9rem;
+      color: $gray-100;
+    }
+  }
+
+  h3,
+  p {
+    z-index: 5;
+  }
+
+  // the icon
+  .icon {
+    z-index: 0;
+    color: rgba($black, .15);
+
+    > i {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 90px;
+      transition: transform $lte-transition-speed linear;
+
+      &.inner-icon {
+        top: 20px;
+        font-size: 70px;
+      }
+    }
+
+    svg {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 70px;
+      transition: transform $lte-transition-speed linear;
+    }
+  }
+
+  // Small box hover state
+  &:hover {
+    text-decoration: none;
+
+    // Animate icons on small box hover
+    .icon {
+      > i {
+        &,
+        &.inner-icon {
+          transform: scale(1.1);
+        }
+      }
+      > svg {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  // No need for icons on very small devices
+  .small-box {
+    text-align: center;
+
+    .icon {
+      display: none;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}

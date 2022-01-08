@@ -1,0 +1,8 @@
+/docs/
+/docs_html/
+/plugins/*
+!/plugins/flot-old/
+/.github/
+/.temp/
+/.lgtm.yml
+/node_modules

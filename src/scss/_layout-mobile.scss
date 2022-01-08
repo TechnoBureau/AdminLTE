@@ -1,0 +1,22 @@
+@include media-breakpoint-down(lg) {
+  .wrapper {
+    .main-sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      min-height: 100vh;
+      margin-left: -#{$lte-sidebar-width};
+
+      .sidebar {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .sidebar-open {
+    .main-sidebar {
+      margin-left: 0;
+    }
+  }
+}

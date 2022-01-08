@@ -1,0 +1,10 @@
+//
+// Component: Text
+//
+
+// text color variations
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: #{$color} !important;
+  }
+}
