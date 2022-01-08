@@ -20,7 +20,7 @@ const year = new Date().getFullYear()
 const banner = `/*!
  * AdminLTE v${pkg.version} (${pkg.homepage})
  * Copyright 2014-${year} ${pkg.author}
- * Licensed under MIT (https://github.com/ColorlibHQ/AdminLTE/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/TechnoBureau/AdminLTE/blob/master/LICENSE)
  */`
 
 // Define paths
@@ -141,14 +141,14 @@ const copyDistJs = () =>
       rollupTypescript()
     ]
   }).then(bundle => bundle.write({
-    file: paths.dist.js + '/technobureau.js',
+    file: paths.dist.js + '/tb-admin-lte.js',
     format: 'umd',
-    name: 'technobureau',
+    name: 'tb-admin-lte',
     sourcemap: false
   }))
 
 // Minify JS
-const minifyDistJs = () => src(paths.dist.js + '/technobureau.js', { sourcemaps: false })
+const minifyDistJs = () => src(paths.dist.js + '/tb-admin-lte.js', { sourcemaps: false })
     .pipe(terser({ compress: { passes: 2 } }))
     .pipe(rename({ suffix: '.min' }))
     .pipe(dest(paths.dist.js, { sourcemaps: '.' }))
@@ -178,4 +178,5 @@ exports.compile = compile
 
 // For Production Release
 exports.production = series(lint, compile)
+exports.default = series(lint, compile)
 

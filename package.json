@@ -4,7 +4,7 @@
   "version": "4.0.0-alpha1",
   "license": "MIT",
   "author": "Ganapathi Chidambaram <ganapathi.rj@gmail.com",
-  "main": "dist/js/adminlte.min.js",
+  "main": "dist/js/tb-admin-lte.min.js",
   "scripts": {
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
@@ -27,8 +27,8 @@
     "dashboard"
   ],
   "homepage": "https://technobureau.com",
-  "style": "dist/css/technobureau.css",
-  "sass": "src/scss/technobureau.scss",
+  "style": "dist/css/tb-admin-lte.css",
+  "sass": "src/scss/tb-admin-lte.scss",
   "repository": {
     "type": "git",
     "url": "git://github.com/technobureau/AdminLTE.git"

@@ -1,35 +1,35 @@
 {
   "files": [
     {
-      "path": "./dist/css/adminlte.css",
+      "path": "./dist/css/tb-admin-lte.css",
       "maxSize": "37.80 kB"
     },
     {
-      "path": "./dist/css/adminlte.min.css",
+      "path": "./dist/css/tb-admin-lte.min.css",
       "maxSize": "35.1 kB"
     },
     {
-      "path": "./dist/css/dark/adminlte-dark-addon.css",
+      "path": "./dist/css/dark/tb-admin-lte-dark-addon.css",
       "maxSize": "10.17 kB"
     },
     {
-      "path": "./dist/css/dark/adminlte-dark-addon.min.css",
+      "path": "./dist/css/dark/tb-admin-lte-dark-addon.min.css",
       "maxSize": "9.9 kB"
     },
     {
-      "path": "./dist/css/rtl/adminlte.rtl.css",
+      "path": "./dist/css/rtl/tb-admin-lte.rtl.css",
       "maxSize": "37.80 kB"
     },
     {
-      "path": "./dist/css/rtl/adminlte.rtl.min.css",
+      "path": "./dist/css/rtl/tb-admin-lte.rtl.min.css",
       "maxSize": "35.1 kB"
     },
     {
-      "path": "./dist/js/adminlte.js",
+      "path": "./dist/js/tb-admin-lte.js",
       "maxSize": "4.1 kB"
     },
     {
-      "path": "./dist/js/adminlte.min.js",
+      "path": "./dist/js/tb-admin-lte.min.js",
       "maxSize": "2.7 kB"
     }
   ]
